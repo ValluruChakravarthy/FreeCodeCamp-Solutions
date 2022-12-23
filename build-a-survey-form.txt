@@ -1,0 +1,143 @@
+** start of undefined **
+Please do not cop the code...
+Done by Chakravarthy.V
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Medical Appointment</title>
+<link rel="stylesheet" href="styles.css">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <h1 id="title">Medical Appointment</h1>
+  <p id="description">All patients should contact the office to be considered for prior appointment</p>
+ <form id="survey-form">
+   <fieldset>
+     <label id="name-label">Name <input type="text" id="name" required placeholder="Enter your Name*"></label>
+    <label id="email-label">Email <input type="email" id="email"  placeholder="Enter your email if known" required></label>
+     <label id="number-label">Age <input type="number"id="number" min=18 max=120 required placeholder="Enter your age*"></label>
+     
+
+
+<label><p1>Enter your Consultation</p1><input type="radio" class="optionz" name="type" value="ENT">ENT</label>
+<label><input type="radio" class="optionz" name="type" value="Cardio">Cardio</label>
+<label><input type="radio" class="optionz" name="type" value="gastro">Gastro</label>
+<label><input type="radio" class="optionz" name="type" value="pulmo" >Pulmonology</label>
+
+<p1>Please choose the branch</p1>
+<select id="dropdown">
+  <option value="5" class="binge">(Select)</option>
+<option value="1" class="binge">Bayden</option>
+<option value="2" class="binge">Camden</option>
+<option value="3" class="binge">Springfield</option>
+<option value="4" class="binge">Las Chavelas</option>
+  </select>
+
+<p1>In addition to would you like to consider for</p1>
+<label><input type="checkbox" value=1 class="optionz">Father</label>
+<label><input type="checkbox" value=2 class="optionz">Mother</label>
+<label><input type="checkbox" value=3 class="optionz">Brother</label>
+<label><input type="checkbox" value=4 class="optionz">Sister</label>
+<label><input type="checkbox" value=5 class="optionz">Grandparents</label>
+
+<p1>Please expalin us the patient's situation</p1>
+<textarea name="situation" class="textarea"placeholder="Mention about diet plan,symptoms,previous health records etc.."></textarea>
+
+<input type="submit" value="Submit" id="submit">
+   </form>
+  </body>
+
+</html>
+
+** end of HTML**
+
+** start of CSS **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+
+}
+
+h1,p{
+  text-align:center;
+  margin:4vh auto;
+  font-family:Sans-Seriff;
+  
+}
+
+fieldset{
+  padding: 1rem;
+  border-radius:15px;
+  margin: 0 3rem 0 3rem;
+    box-shadow: 0 0 20px 0 rgb(83, 159, 194);
+  
+}
+
+form{
+  color:rgb(248, 240, 240);
+}
+select,.optionz{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+
+}
+
+input,textarea,select,optionz,.binge,checkbox{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  font-family:Tahoma;
+  background:linear-gradient(90deg,hsl(0, 0%, 89%), hsl(180, 10%, 78%), hsl(0, 0%, 49%));
+}
+a,p1{
+  font-family:Tahoma;
+}
+
+label {
+  display: block;
+  margin:0 0.4em 0 0;font-family:Italic;
+}
+.optionz {
+  width: unset;
+  margin: 0 1em 0.2em 0;
+  vertical-align: middle;
+}
+
+p1{
+  display:block;
+  margin-bottom:10px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 90%;
+  margin: 2em auto;
+  height: 1.2em;
+  font-size: 1.1rem;
+  background:rgb(62, 189, 125);
+
+  min-width: 200px;
+  box-shadow: 0 0 1px rgb(118, 208, 163);
+  color:white;
+  border-color:hsla(186, 54%, 69%,0.5);
+}
+
+
+
+
+
+
+
+** end of undefined **
+

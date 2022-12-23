@@ -1,0 +1,349 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+</head>
+<header id="top">
+    <h3>REACT.JS Documentation</h3>
+    </header>
+
+<body>
+          <nav id="navbar">
+             <header id="navbar head">JS Documentation</header>
+         
+          <li><a href="#Intro" class="nav-link"><li>Intro</li></a></li>
+          
+          <li><a href="#Try_the_Best_JS!" class="nav-link">Try the Best JS!</a></li>
+          
+          <li><a href="#Learn_the_Best_JS!" class="nav-link">Learn the Best JS!</a></li>
+          
+           <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+           
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        
+<li><a class="nav-link" href="#Rendering_Elements">Rendering Elements</a></li>
+
+<li><a class="nav-link" href="#Lists_and_Keys">Lists and Keys</a></li>
+
+<li><a class="nav-link" href="#References">References</a></li>
+
+    </nav>
+ 
+
+
+ <main id="main-doc">
+   
+         <section class="main-section" id="Intro">
+          <header>Intro</header>
+  <p>React is a JavaScript library for building user interfaces.</p>
+
+  <p>React has been designed from the start for gradual adoption, and you
+</p>
+</section>
+
+  <section id="Try_the_Best_JS!" class="main-section">
+    <header>Try the Best JS!</header>
+   the links in this section will help you get started.
+  
+<h4>Online Playgrounds</h4>
+<p>
+If you’re in the shit
+</p>
+<p>
+If youzdczsdasdasd
+</p>
+<p>
+Add React to a Website
+You can add React to an HTML page in one minute. You can 
+</p>
+
+ </section>
+
+<section class="main-section" id="Learn_the_Best_JS!">
+  
+    <header>Learn the Best JS!</header>
+  <p>  
+React has been designed from the start for gradual adoption
+</p>
+<h4>
+First Examples</h4>
+<p>
+The React homepage contains a few small React examples 
+</p>
+<h4>React for Beginners</h4>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<code></code>
+<code></code>
+<code></code>
+<code></code>
+<code></code>
+<p>
+If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this </p>
+
+<h4>React for Designers</h4>
+<p>
+If you’re coming from a design background, these resources are a great place to get started.</p>
+
+<h4>JavaScript Resources</h4>
+<p>
+The React documentation assumes some familiarity with 
+  </p>
+<p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+
+<p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+
+<p id="code">
+  // THIS WILL CAUSE AN ERROR function f() {};
+   const f = 5; </p><p id="code">
+// THIS WILL CAUSE AN ERROR ALSO function f() 
+{ const g = 5;
+ var g;
+//statements }</p>
+<p id="code">However, object attributes are not protected, so the following statement is executed without problems.
+const MY_OBJECT = {"key": "value"};
+ MY_OBJECT.key ="otherValue";
+
+</p>
+</section>
+
+<section class="main-section" id="Hello_World">
+<header>Hello World</header>
+<p>
+The smallest React example looks like this:</p>
+
+<p><a id="code">
+const root = ReactDOM.createRoot(document.getElementById('root'));
+</a></p>
+<p><a id="code">
+const root = ReactDOM.createRoot(document.getElementById('root'));
+</a></p>
+</p>
+<p>
+Try it on CodePen
+</p>
+<p>
+In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+</p>
+</section>
+<section id="Variables" class="main-section">
+  <header>Variables</header>
+  <p>If you use var outside of a function, it belongs to the global scope.
+</p><p>
+If you use var inside of a function, it belongs to that function.
+</p>
+<p>
+If you use var inside of a block, i.e. a for loop, the variable is still available outside of that block.</p>
+  </section>
+<section class="main-section" id="Rendering_Elements">
+<header>Rendering Elements</header>
+<p>
+Elements are the smallest building blocks of React apps.</p>
+<p>
+An element describes what you want to see on the screen:</p>
+
+<p><a id="code">
+const root = ReactDOM.createRoot(document.getElementById('root'));
+</a></p>
+<p>
+Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+</p>
+
+<p id="note">
+<b>Note:</b>
+
+One might confuse elements with a more widely known concept of “components”. We will introduce components in the next section. Elements are what components are “made of”, and we encourage you to read this section before jumping ahead.
+
+</p>
+</section>
+
+<section class="main-section" id="Lists_and_Keys">
+  <header>Lists and Keys</header>
+  <p>
+First, let’s review how you transform lists in JavaScript.
+</p>
+<p>
+Given the code below, we use the map() function to take an array of numbers and double their values. We assign the new array returned by map() to the variable doubled and log it:
+</p>
+<p><a id="code">
+const root = ReactDOM.createRoot(document.getElementById('root'));
+</a></p>
+<p><a id="code">
+const root = ReactDOM.createRoot(document.getElementById('root'));
+</a></p>
+<p>
+In React, transforming arrays into lists of elements is nearly identical.
+</p>
+<p>
+Below, we loop through the numbers array using the JavaScript map() function. We return a &lt;h1&gt; element for each item. Finally, we assign the resulting array of elements to listItems:
+</p>
+<p id="code">
+const numbers = [1, 2, 3, 4, 5];
+
+const listItems = numbers.map((number) =>
+  &lt;li&gt;{number}&lt;li&gt;
+);
+</p>
+<p>
+Then, we can include the entire listItems array inside a <ul> element:
+  </p>
+  <p id="code">
+   &lt;ul&gt;{listItems}&lt;ul&gt;
+    </p>
+  </section>
+
+
+<section class="main-section" id="References">
+  <header>References</header>
+  <section class="main-section" id="References">
+  <header>References</header>
+
+  <a >Check out the link</a>
+  </section>
+    </main>
+</body>
+
+  
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+#navbar{
+  float:left;
+}
+body{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  
+}
+div[id="line"]{
+  height:83%;
+  background-color:grey;
+  width:0.2%;
+}
+
+a{
+  text-decoration:none;
+  font-size:16.2px;
+  list-style:none;
+}
+
+li[id="navbar"]{
+ 
+  border-bottom:1px solid;
+  color:black;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:-40px;
+  position:10px;
+  
+}
+ul[id="navbar" ]>li{
+  display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+list-style:none;
+}
+
+div[id="navbar"]{
+  width:24.5%;
+  margin-left:0;
+  overflow-y:scroll;
+ height:86%;
+}
+div[id="main-doc"]{
+  margin-top:14px;
+  width:72%;
+  margin-left:20px;
+  height:82%;
+
+  overflow-y:scroll;
+}
+h1{
+  font-size:25px;
+text-align:center;
+border-bottom:1px solid;
+}
+header[id="top"]{
+  text-align: center;
+  text-transform:uppercase;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+  height:18%;
+  width:100%;
+}
+h3{
+  font-family:Garamond;
+  font-size:32px;
+  width:100%;
+  font-weight:bold;
+  
+}
+p[id="code"]{
+
+  width:73%;
+  white-space:pre-line;
+  text-align:left;
+  border-left:20px solid rgba(125,125,125,0.012);
+  background-color:rgba(125,125,125,0.12);
+  color:rgba(1,1,1,0.7);
+  border-radius:8px;
+  border-top:20px solid rgba(125,125,125,0.012);
+  border-bottom:20px solid rgba(125,125,125,0.012);
+  font-size:14px;
+  float:center;
+    margin:auto;
+    margin-bottom:10px;
+}
+
+h4{
+  font-size:18px;
+}
+header{
+  font-size:22px;
+  text-transform:Uppercase;
+  font-family:Georgia;
+  font-weight:bold;
+}
+p{
+  
+  margin-left:40px;
+  margin-right:50px;
+}
+p[id="note"]{
+   width:70%;
+  white-space:pre-line;
+  
+  color:rgba(1,1,1,0.7);
+  border-radius:4px;
+  border-left:20px solid#FFCC66 ; 
+ background: linear-gradient(90deg,#FFCC66,#FFFF66);
+ border-right:10px solid #FFFF67;
+  font-size:14px;
+    margin:auto;
+   text-align:evenly;
+    
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+nav[id="navbar"]{
+  color:black;
+}
+
+** end of undefined **
+

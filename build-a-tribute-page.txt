@@ -1,0 +1,163 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+
+<head>
+  </head>
+<main id="main">
+<body>
+  <h1 id="title">Mr.Moore Shaw</h1>
+  <title id="title">Mr.Moore Show</title>
+  <p>Our beloved leader...and his legacy..</p>
+
+    <div class="img-div" id="img-div">
+      <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="A great man's photo">
+      
+      <figcaption id="img-caption">B.S:This guy's a genius and has nothing to do with the photo..and he's a maniac too...</figcaption>
+    </div>
+    </div>
+    
+
+<div class="details" id="tribute-info">
+
+  <p><b>Here's a time line of his Boring Life:</b></p>
+   <p3><span class="dot"></span><b>1901</b> -Born in Cresco, Iowa</p3>
+  <p3><span class="dot"></span><b>1902</b> -Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</p3>
+<p3><span class="dot"></span><b>1903</b> -Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</p3>
+<p3><span class="dot"></span><b>1904</b> -Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</p3>
+<p3><span class="dot"></span><b>1905</b> -Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</p3>
+<p3><span class="dot"></span> <b>1906</b>Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</p3>
+
+  </div>
+  <div class="details">
+    <p4><em class="details">"His life is full of twists and all his enemies lies within him and outside.SUffering with Pain, Ignoring the peace lies down our survivor of this unearthly life on Earth...RIP.."</em></p4>
+    <p4><em class="details">"----A Survivor"</em></p4>
+
+    </div>
+
+</body>
+
+  <b>It's not good to live,just die in peace already man..no Money, no Life...</b><a href="https://en.wikipedia.org/wiki/Norman_Borlaug" id="tribute-link" target="_blank">Motivation</a></b>
+  
+  
+  </main>
+
+  
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+  border-color:black;
+  background-color:white;
+  
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+figcaption{
+  text-align:center;
+  padding-bottom:10px;
+  font-size:15px;
+}
+body{
+  border-radius:6px;
+  margin-top:2em;
+  margin-bottom:2em;
+  padding:20px;
+  background-color:rgb(233, 233, 233);
+}
+h1{
+  text-align:center;
+  background-color:rgb(233,233,233);
+  padding-top:30px;
+  font-family:Verdana,Sans-serif;
+  font-size:30px;
+}
+p{
+  margin-top:0;
+  text-align:center;
+  background-color:rgb(233,233,233);
+}
+#main{
+  border-radius:6px;
+  background-color:rgb(233,232,233);
+}
+#image{
+  background-color:white;
+width:100%;
+max-width:100%;
+ height:relative;
+ display:block;
+}
+.img-div {
+  background-color:white;
+  padding:10px;
+}
+.details{
+  background-color:rgb(233,233,233);
+  padding:10px;
+  margin-top:1rem;
+  display:inline-block;
+  
+}
+b{
+  background-color:rgb(233,233,233);
+  font-size:16px;
+}
+
+.dot{
+  height: 7px;
+  width: 7px;
+  background-color: #000;
+  border-radius: 50%;
+  vertical-align:0.2vh;
+display:inline-block;
+margin-left:auto;
+margin-right:auto;
+}
+p3{
+  font-size:14px;
+  background-color:rgb(233,233,233);
+ 
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 7em;
+}
+p4{
+  font-size:14px;
+  background-color:rgb(233,233,233);
+ font-family:Tahoma;
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 10em;
+  margin-right: 7em;
+}
+footer{
+  background-color:rgb(233,233,233);
+   display: block;
+  margin-left: 14%;
+  margin-right: 3em;
+}
+a{
+  color:rgb(63, 75, 116);
+   background-color:rgb(233,233,233);
+}
+
+
+
+
+
+
+** end of undefined **
+
